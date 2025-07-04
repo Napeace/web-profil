@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Profil - Najmi Nafis</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#10b981',   // emerald-500
+                        'secondary': '#14b8a6', // teal-500
+                        'accent': '#06b6d4',    // cyan-500
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-emerald-50 to-teal-50">
+
+    <div class="preview-container"></div>
+
+    <section id="hero" class="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50">
+        <!-- Background decorative elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute -top-20 -right-20 sm:-top-40 sm:-right-40 w-40 h-40 sm:w-80 sm:h-80 bg-gradient-to-br from-emerald-400/20 to-teal-400/20 rounded-full blur-2xl sm:blur-3xl"></div>
+            <div class="absolute -bottom-20 -left-20 sm:-bottom-40 sm:-left-40 w-40 h-40 sm:w-80 sm:h-80 bg-gradient-to-br from-teal-400/20 to-cyan-400/20 rounded-full blur-2xl sm:blur-3xl"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 sm:w-96 sm:h-96 bg-gradient-to-br from-emerald-300/10 to-teal-300/10 rounded-full blur-2xl sm:blur-3xl"></div>
+        </div>
+
+        <!-- Main content -->
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 z-10">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+                <!-- Text content -->
+                <div class="w-full lg:w-1/2 text-center lg:text-left" data-aos="fade-right">
+                    <div class="mb-4 sm:mb-6">
+                        <h2 class="text-lg sm:text-2xl lg:text-3xl font-semibold text-emerald-600 mb-2">
+                            👋 Hello, I'm
+                        </h2>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-7xl font-bold text-gray-800 mb-4 sm:mb-6 leading-tight">
+                        <span class="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
+                            Najmi Nafis
+                        </span>
+                    </h1>
+
+                    <p class="text-base sm:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 leading-relaxed px-2 sm:px-0">
+                        Full Stack Developer & Machine Learning Enthusiast<br>
+                        <span class="text-emerald-600">Creating digital experiences that matter</span>
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start px-4 sm:px-0">
+                        <a href="#portfolio" class="bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-sm sm:text-base font-semibold hover:shadow-lg hover:shadow-emerald-500/25 transition-all duration-300 transform hover:-translate-y-1 smooth-scroll">
+                            View My Work
+                        </a>
+                        <a href="./documents/cv-najmi-nafis.pdf" download="CV-Najmi-Nafis.pdf" class="border-2 border-emerald-500 text-emerald-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-sm sm:text-base font-semibold hover:bg-emerald-500 hover:text-white transition-all duration-300">
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Image/Illustration -->
+                <div class="w-full lg:w-1/2 flex justify-center lg:justify-end mt-8 lg:mt-0" data-aos="fade-left">
+                    <div class="relative">
+                        <!-- Profile image -->
+                        <div class="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-full flex items-center justify-center shadow-2xl shadow-emerald-500/25 p-2">
+                            <div class="w-full h-full bg-white rounded-full overflow-hidden">
+                                <img src="./images/najmi.png" alt="Najmi Nafis" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+
+                        <!-- Floating elements -->
+                        <div class="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-cyan-400 to-teal-400 rounded-lg flex items-center justify-center shadow-lg animate-bounce">
+                            <svg class="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                        </div>
+
+                        <div class="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-emerald-400 to-green-400 rounded-full flex items-center justify-center shadow-lg animate-pulse">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div class="w-5 h-8 sm:w-6 sm:h-10 border-2 border-emerald-500 rounded-full flex justify-center">
+                <div class="w-1 h-2 sm:h-3 bg-emerald-500 rounded-full mt-1 sm:mt-2 animate-pulse"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-12 sm:py-16 lg:py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 text-gray-800" data-aos="fade-up">About Me</h2>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                    <!-- About text -->
+                    <div class="order-2 lg:order-1" data-aos="fade-right">
+                        <h3 class="text-xl sm:text-2xl font-semibold text-emerald-600 mb-4">Passionate Developer</h3>
+                        <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-4">
+                            Saya adalah seorang Full Stack Developer dengan minat dalam pengembangan web modern dan aplikasi Machine Learning. Dengan pengalaman lebih dari 2 tahun, saya telah mengerjakan berbagai proyek pribadi mulai dari web hingga berbagai aplikasi kecil berbasis Python.
+                        </p>
+                        <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-6">
+                            Perjalanan saya di dunia teknologi didorong oleh rasa ingin tahu dan semangat untuk terus belajar. Saya juga memiliki pemahaman dasar tentang pengelolaan database menggunakan SQL/MySQL. Saya terbiasa menggunakan HTML, CSS, Tailwind, Laravel, dan Python dalam pengembangan berbagai solusi digital.
+                            Saya percaya bahwa solusi sederhana namun berguna bisa berdampak besar dalam kehidupan digital.
+                        </p>
+
+                        <!-- Skills -->
+                        <div class="flex flex-wrap gap-2 sm:gap-3">
+                            <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs sm:text-sm font-medium">HTML</span>
+                            <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs sm:text-sm font-medium">CSS</span>
+                            <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs sm:text-sm font-medium">Tailwind</span>
+                            <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs sm:text-sm font-medium">Laravel</span>
+                            <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs sm:text-sm font-medium">SQL</span>
+                            <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs sm:text-sm font-medium">Python</span>
+                            <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs sm:text-sm font-medium">Machine Learning</span>
+                        </div>
+                    </div>
+
+                    <!-- About image/stats -->
+                    <div class="order-1 lg:order-2" data-aos="fade-left">
+                        <div class="grid grid-cols-2 gap-4 sm:gap-6">
+                            <div class="bg-gradient-to-br from-emerald-50 to-teal-50 p-4 sm:p-6 rounded-2xl text-center">
+                                <h4 class="text-2xl sm:text-3xl font-bold text-emerald-600">5+</h4>
+                                <p class="text-gray-600 text-xs sm:text-sm mt-1">Projects Completed</p>
+                            </div>
+                            <div class="bg-gradient-to-br from-teal-50 to-cyan-50 p-4 sm:p-6 rounded-2xl text-center">
+                                <h4 class="text-2xl sm:text-3xl font-bold text-teal-600">2+</h4>
+                                <p class="text-gray-600 text-xs sm:text-sm mt-1">Years Experience</p>
+                            </div>
+                            <div class="bg-gradient-to-br from-cyan-50 to-emerald-50 p-4 sm:p-6 rounded-2xl text-center">
+                                <h4 class="text-2xl sm:text-3xl font-bold text-cyan-600">👦</h4>
+                                <p class="text-gray-600 text-xs sm:text-sm mt-1">User First</p>
+                            </div>
+                            <div class="bg-gradient-to-br from-emerald-50 to-cyan-50 p-4 sm:p-6 rounded-2xl text-center">
+                                <h4 class="text-2xl sm:text-3xl font-bold text-emerald-600">∞</h4>
+                                <p class="text-gray-600 text-xs sm:text-sm mt-1">Learning Spirit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-12 sm:py-16 lg:py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 text-gray-800" data-aos="fade-up">My Work</h2>
+
+            <!-- Portfolio grid -->
+            <div class="portfolio-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8">
+                <!-- Project 1 - SJAM GAMA FARM -->
+                <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="100">
+                    <div class="image-container h-48 sm:h-56 bg-gray-200 overflow-hidden">
+                        <img src="./images/sjamgamafarm.png" alt="SJAM GAMA FARM Project" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="card-content p-4 sm:p-6 flex flex-col flex-grow">
+                        <h3 class="text-lg sm:text-xl font-semibold text-gray-800 mb-2">SJAM GAMA FARM</h3>
+                        <p class="text-gray-600 text-sm sm:text-base mb-4">Sistem Informasi Manajemen Pemasaran Produk Hidroponik dengan fitur form pelatihan interaktif dan pengelolaan produk hidroponik.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag bg-emerald-100 text-emerald-700 px-2 py-1 rounded text-xs font-medium">Laravel</span>
+                            <span class="tech-tag bg-emerald-100 text-emerald-700 px-2 py-1 rounded text-xs font-medium">Tailwind CSS</span>
+                            <span class="tech-tag bg-emerald-100 text-emerald-700 px-2 py-1 rounded text-xs font-medium">MySQL</span>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://drive.google.com/drive/folders/1K34Q9kkKT0gwT5kt0_GBMj6ZkDmtYycF?usp=sharing" target="_blank" class="project-button bg-emerald-600 text-white px-3 py-1.5 rounded text-sm font-medium hover:bg-emerald-700 transition-colors inline-block">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 - RepairTech -->
+                <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="200">
+                    <div class="image-container h-48 sm:h-56 bg-gray-200 overflow-hidden">
+                        <img src="./images/repairtech.png" alt="RepairTech Project" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="card-content p-4 sm:p-6 flex flex-col flex-grow">
+                        <h3 class="text-lg sm:text-xl font-semibold text-gray-800 mb-2">RepairTech</h3>
+                        <p class="text-gray-600 text-sm sm:text-base mb-4">Aplikasi Desktop Penjualan Komponen & Jasa Service Laptop berbasis Windows dengan fitur transaksi dan laporan penjualan.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs font-medium">C#</span>
+                            <span class="tech-tag bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs font-medium">.NET</span>
+                            <span class="tech-tag bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs font-medium">Windows Forms</span>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://drive.google.com/drive/folders/1K34Q9kkKT0gwT5kt0_GBMj6ZkDmtYycF?usp=sharing" target="_blank" class="project-button bg-blue-600 text-white px-3 py-1.5 rounded text-sm font-medium hover:bg-blue-700 transition-colors inline-block">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 - Rimba Camp -->
+                <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="300">
+                    <div class="image-container h-48 sm:h-56 bg-gray-200 overflow-hidden">
+                        <img src="./images/rimbacamp.png" alt="Rimba Camp Project" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="card-content p-4 sm:p-6 flex flex-col flex-grow">
+                        <h3 class="text-lg sm:text-xl font-semibold text-gray-800 mb-2">Rimba Camp</h3>
+                        <p class="text-gray-600 text-sm sm:text-base mb-4">Sistem Informasi Reservasi Cottages dan Edukasi Wisata Alam dengan panel admin untuk pengelolaan konten dan reservasi pengunjung.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag bg-green-100 text-green-700 px-2 py-1 rounded text-xs font-medium">Laravel</span>
+                            <span class="tech-tag bg-green-100 text-green-700 px-2 py-1 rounded text-xs font-medium">Tailwind CSS</span>
+                            <span class="tech-tag bg-green-100 text-green-700 px-2 py-1 rounded text-xs font-medium">MySQL</span>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://drive.google.com/drive/folders/1K34Q9kkKT0gwT5kt0_GBMj6ZkDmtYycF?usp=sharing" target="_blank" class="project-button bg-green-600 text-white px-3 py-1.5 rounded text-xs font-medium hover:bg-green-700 transition-colors inline-block">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 - Heart Disease Prediction -->
+                <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="400">
+                    <div class="image-container h-48 sm:h-56 bg-gray-200 overflow-hidden">
+                        <img src="./images/datamining.png" alt="Heart Disease Prediction Project" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="card-content p-4 sm:p-6 flex flex-col flex-grow">
+                        <h3 class="text-lg sm:text-xl font-semibold text-gray-800 mb-2">Heart Disease Prediction</h3>
+                        <p class="text-gray-600 text-sm sm:text-base mb-4">Prediksi Penyakit Jantung menggunakan Algoritma Gaussian Naive Bayes berbasis Python dengan akurasi model 72%.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag bg-rose-100 text-rose-700 px-2 py-1 rounded text-xs font-medium">Python</span>
+                            <span class="tech-tag bg-rose-100 text-rose-700 px-2 py-1 rounded text-xs font-medium">Scikit-Learn</span>
+                            <span class="tech-tag bg-rose-100 text-rose-700 px-2 py-1 rounded text-xs font-medium">Pandas</span>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://drive.google.com/drive/folders/1K34Q9kkKT0gwT5kt0_GBMj6ZkDmtYycF?usp=sharing" target="_blank" class="project-button bg-rose-600 text-white px-3 py-1.5 rounded text-xs font-medium hover:bg-rose-700 transition-colors inline-block">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="py-12 sm:py-16 lg:py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 text-gray-800" data-aos="fade-up">Certificates</h2>
+
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                    <!-- Certificate 1 -->
+                    <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100" data-aos="fade-up" data-aos-delay="100">
+                        <!-- Certificate Image -->
+                        <div class="image-container h-48 sm:h-56 bg-gradient-to-br from-purple-100 to-indigo-100 overflow-hidden relative">
+                            <img src="./images/certificate1.png" alt="Business Competition Certificate" class="w-full h-full object-cover">
+                            <!-- Overlay for better text readability -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+                        </div>
+
+                        <!-- Certificate Content -->
+                        <div class="card-content p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-semibold text-gray-800">Business Competition</h3>
+                                    <p class="text-sm text-gray-600">May 2024</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-3">Peserta Bidang Lomba Bisnis TIK - Information System Ideas Competition (ISIC)</p>
+                            <p class="text-xs text-gray-500">Universitas Jember</p>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 2 -->
+                    <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100" data-aos="fade-up" data-aos-delay="200">
+                        <!-- Certificate Image -->
+                        <div class="image-container h-48 sm:h-56 bg-gradient-to-br from-green-100 to-teal-100 overflow-hidden relative">
+                            <img src="./images/certificate2.png" alt="IoT & Precision Farming Certificate" class="w-full h-full object-cover">
+                            <!-- Overlay for better text readability -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+                        </div>
+
+                        <!-- Certificate Content -->
+                        <div class="card-content p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                                    </svg>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-semibold text-gray-800">IoT & Precision Farming</h3>
+                                    <p class="text-sm text-gray-600">October 2024</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-3">Webinar "Cultivating the Future: IoT and FOSS for Precision Farming"</p>
+                            <p class="text-xs text-gray-500">Universitas Jember</p>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 3 -->
+                    <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100" data-aos="fade-up" data-aos-delay="300">
+                        <!-- Certificate Image -->
+                        <div class="image-container h-48 sm:h-56 bg-gradient-to-br from-blue-100 to-cyan-100 overflow-hidden relative">
+                            <img src="./images/certificate3.png" alt="Cyber Security Certificate" class="w-full h-full object-cover">
+                            <!-- Overlay for better text readability -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+                        </div>
+
+                        <!-- Certificate Content -->
+                        <div class="card-content p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                    </svg>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-semibold text-gray-800">Cyber Security</h3>
+                                    <p class="text-sm text-gray-600">November 2024</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-3">Webinar "Masa Depan Keamanan Jaringan Nirkabel: Tren dan Teknologi Terbaru"</p>
+                            <p class="text-xs text-gray-500">Universitas Jember</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-8" data-aos="fade-up" data-aos-delay="400">
+                    <p class="text-gray-600 text-sm">Committed to continuous learning and professional development</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-12 sm:py-16 lg:py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 text-gray-800" data-aos="fade-up">Let's Connect</h2>
+
+            <div class="max-w-4xl mx-auto">
+                <!-- Main contact info -->
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <p class="text-lg sm:text-xl text-gray-600 mb-8">
+                        Interested in working together? Let's discuss your project!
+                    </p>
+                </div>
+
+                <!-- Contact methods grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-12">
+                    <!-- Email -->
+                    <div class="bg-gradient-to-br from-emerald-50 to-teal-50 p-6 sm:p-8 rounded-2xl text-center hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Email Me</h3>
+                        <p class="text-gray-600 mb-4">najminafis1504@gmail.com</p>
+                        <a href="mailto:najminafis1504@gmail.com" class="inline-block bg-emerald-500 text-white px-6 py-3 rounded-xl hover:bg-emerald-600 transition-all duration-300 font-medium">
+                            Send Email
+                        </a>
+                    </div>
+
+                    <!-- WhatsApp -->
+                    <div class="bg-gradient-to-br from-teal-50 to-cyan-50 p-6 sm:p-8 rounded-2xl text-center hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-16 h-16 bg-teal-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">WhatsApp</h3>
+                        <p class="text-gray-600 mb-4">+62 89537 0000 307</p>
+                        <a href="https://wa.me/62895370000307" target="_blank" class="inline-block bg-teal-500 text-white px-6 py-3 rounded-xl hover:bg-teal-600 transition-all duration-300 font-medium">
+                            Chat Now
+                        </a>
+                    </div>
+
+                    <!-- Location -->
+                    <div class="bg-gradient-to-br from-cyan-50 to-emerald-50 p-6 sm:p-8 rounded-2xl text-center hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-16 h-16 bg-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Location</h3>
+                        <p class="text-gray-600 mb-4">Bondowoso, Indonesia</p>
+                        <button class="inline-block bg-cyan-500 text-white px-6 py-3 rounded-xl hover:bg-cyan-600 transition-all duration-300 font-medium cursor-default">
+                            Available for Remote
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Social links -->
+                <div class="text-center" data-aos="fade-up" data-aos-delay="50">
+                    <p class="text-gray-600 mb-6">Find me on social media</p>
+                    <div class="flex gap-4 justify-center">
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/nafis.23/" target="_blank" class="w-14 h-14 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-full flex items-center justify-center text-white hover:shadow-lg hover:shadow-emerald-500/25 transition-all duration-300 transform hover:-translate-y-1">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <!-- GitHub -->
+                        <a href="https://github.com/Napeace" target="_blank" class="w-14 h-14 bg-gradient-to-br from-teal-500 to-emerald-600 rounded-full flex items-center justify-center text-white hover:shadow-lg hover:shadow-teal-500/25 transition-all duration-300 transform hover:-translate-y-1">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <!-- YouTube -->
+                        <a href="https://www.youtube.com/@napeace23" target="_blank" class="w-14 h-14 bg-gradient-to-br from-emerald-600 to-teal-600 rounded-full flex items-center justify-center text-white hover:shadow-lg hover:shadow-emerald-600/25 transition-all duration-300 transform hover:-translate-y-1">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>
