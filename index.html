@@ -24,12 +24,11 @@
     
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gradient-to-br from-emerald-50 to-teal-50">
+<body class="bg-gradient-to-br from-emerald-50 to-teal-50 overflow-x-hidden">
 
     <div class="preview-container"></div>
 
-    <section id="hero" class="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50">
-        <!-- Background decorative elements -->
+    <section id="hero" class="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 w-full max-w-full">        <!-- Background decorative elements -->
         <div class="absolute inset-0 overflow-hidden">
             <div class="absolute -top-20 -right-20 sm:-top-40 sm:-right-40 w-40 h-40 sm:w-80 sm:h-80 bg-gradient-to-br from-emerald-400/20 to-teal-400/20 rounded-full blur-2xl sm:blur-3xl"></div>
             <div class="absolute -bottom-20 -left-20 sm:-bottom-40 sm:-left-40 w-40 h-40 sm:w-80 sm:h-80 bg-gradient-to-br from-teal-400/20 to-cyan-400/20 rounded-full blur-2xl sm:blur-3xl"></div>
@@ -38,9 +37,9 @@
 
         <!-- Main content -->
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 z-10">
-            <div class="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+            <div class="flex flex-col items-center justify-center gap-8 lg:gap-12 lg:flex-row lg:justify-between">
                 <!-- Text content -->
-                <div class="w-full lg:w-1/2 text-center lg:text-left" data-aos="fade-right">
+                <div class="w-full lg:w-1/2 text-center lg:text-left order-2 lg:order-1" data-aos="fade-right">
                     <div class="mb-4 sm:mb-6">
                         <h2 class="text-lg sm:text-2xl lg:text-3xl font-semibold text-emerald-600 mb-2">
                             👋 Hello, I'm
@@ -69,7 +68,7 @@
                 </div>
 
                 <!-- Image/Illustration -->
-                <div class="w-full lg:w-1/2 flex justify-center lg:justify-end mt-8 lg:mt-0" data-aos="fade-left">
+                <div class="w-full lg:w-1/2 flex justify-center lg:justify-end order-1 lg:order-2" data-aos="fade-left">
                     <div class="relative">
                         <!-- Profile image -->
                         <div class="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-full flex items-center justify-center shadow-2xl shadow-emerald-500/25 p-2">
@@ -96,8 +95,7 @@
         </div>
 
         <!-- Scroll indicator -->
-        <div class="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <div class="w-5 h-8 sm:w-6 sm:h-10 border-2 border-emerald-500 rounded-full flex justify-center">
+        <div class="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hidden sm:block">            <div class="w-5 h-8 sm:w-6 sm:h-10 border-2 border-emerald-500 rounded-full flex justify-center">
                 <div class="w-1 h-2 sm:h-3 bg-emerald-500 rounded-full mt-1 sm:mt-2 animate-pulse"></div>
             </div>
         </div>
@@ -165,7 +163,7 @@
             <!-- Portfolio grid -->
             <div class="portfolio-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8">
                 <!-- Project 1 - SJAM GAMA FARM -->
-                <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-150 flex flex-col" data-aos="fade-up" data-aos-delay="100">
                     <div class="image-container h-48 sm:h-56 bg-gray-200 overflow-hidden">
                         <img src="./images/sjamgamafarm.png" alt="SJAM GAMA FARM Project" class="w-full h-full object-cover">
                     </div>
@@ -185,7 +183,7 @@
                 </div>
 
                 <!-- Project 2 - RepairTech -->
-                <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="100">
                     <div class="image-container h-48 sm:h-56 bg-gray-200 overflow-hidden">
                         <img src="./images/repairtech.png" alt="RepairTech Project" class="w-full h-full object-cover">
                     </div>
@@ -205,7 +203,7 @@
                 </div>
 
                 <!-- Project 3 - Rimba Camp -->
-                <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="100">
                     <div class="image-container h-48 sm:h-56 bg-gray-200 overflow-hidden">
                         <img src="./images/rimbacamp.png" alt="Rimba Camp Project" class="w-full h-full object-cover">
                     </div>
@@ -225,7 +223,7 @@
                 </div>
 
                 <!-- Project 4 - Heart Disease Prediction -->
-                <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="400">
+                <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="100">
                     <div class="image-container h-48 sm:h-56 bg-gray-200 overflow-hidden">
                         <img src="./images/datamining.png" alt="Heart Disease Prediction Project" class="w-full h-full object-cover">
                     </div>
@@ -281,7 +279,7 @@
                     </div>
 
                     <!-- Certificate 2 -->
-                    <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100" data-aos="fade-up" data-aos-delay="100">
                         <!-- Certificate Image -->
                         <div class="image-container h-48 sm:h-56 bg-gradient-to-br from-green-100 to-teal-100 overflow-hidden relative">
                             <img src="./images/certificate2.png" alt="IoT & Precision Farming Certificate" class="w-full h-full object-cover">
@@ -308,7 +306,7 @@
                     </div>
 
                     <!-- Certificate 3 -->
-                    <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100" data-aos="fade-up" data-aos-delay="100">
                         <!-- Certificate Image -->
                         <div class="image-container h-48 sm:h-56 bg-gradient-to-br from-blue-100 to-cyan-100 overflow-hidden relative">
                             <img src="./images/certificate3.png" alt="Cyber Security Certificate" class="w-full h-full object-cover">
